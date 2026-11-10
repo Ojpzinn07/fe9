@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetCare 24h - Hospital Veterinário</title>
+
+    <!-- CSS: Aparência do site -->
+    <style>
+
+        /* Configurações gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #203044;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h2 {
+            color: #147e9c;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #203044;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #24a4c7;
+        }
+
+        /* Seções */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Página inicial */
+        #inicio {
+            background-color: #e9faff;
+            padding: 60px 20px;
+        }
+
+        #inicio h1 {
+            font-size: 35px;
+            color: #147e9c;
+        }
+
+        #inicio p {
+            font-size: 18px;
+        }
+
+        /* Botão */
+        .botao {
+            display: inline-block;
+            background-color: #24a4c7;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .botao:hover {
+            background-color: #147e9c;
+        }
+
+        /* Animais */
+        .animais {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+
+        /* Caixas dos serviços e equipe */
+        .caixa {
+            background-color: white;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+        }
+
+        .caixa h3 {
+            color: #147e9c;
+        }
+
+        /* Localização */
+        #localizacao {
+            background-color: #e8fbf8;
+        }
+
+        /* Formulário */
+        form {
+            background-color: white;
+            padding: 25px;
+            max-width: 450px;
+            margin: 20px auto;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            background-color: #24a4c7;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #147e9c;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #203044;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            #inicio h1 {
+                font-size: 27px;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <h2>🐾 PetCare 24h</h2>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- INÍCIO -->
+    <section id="inicio">
+
+        <h1>Bem-vindo ao PetCare 24h!</h1>
+
+        <h2>O melhor cuidado para seu melhor amigo!</h2>
+
+        <p>
+            Cuidamos do seu animal com muito amor,
+            carinho e dedicação.
+        </p>
+
+        <p>
+            Temos atendimento veterinário 24 horas
+            para cuidar da saúde do seu pet.
+        </p>
+
+        <a href="#contato" class="botao">Entre em contato</a>
+
+        <div class="animais">
+            🐶 🐱
+        </div>
+
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+
+        <h2>Nossos Serviços</h2>
+
+        <p>Conheça os serviços que oferecemos:</p>
+
+        <div class="caixa">
+            <h3>🩺 Consultas veterinárias</h3>
+            <p>Consultas para cuidar da saúde do seu animal.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>🚑 Emergência 24 horas</h3>
+            <p>Atendimento para situações de emergência.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>💉 Vacinação</h3>
+            <p>Vacinas para proteger seu melhor amigo.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>🔬 Exames</h3>
+            <p>Exames para acompanhar a saúde do seu pet.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>🏥 Internação</h3>
+            <p>Cuidados especiais durante a recuperação.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>🐕 Orientação preventiva</h3>
+            <p>Dicas sobre alimentação, higiene e saúde.</p>
+        </div>
+
+    </section>
+
+
+    <!-- EQUIPE -->
+    <section id="equipe">
+
+        <h2>Nossa Equipe</h2>
+
+        <p>Conheça nossos profissionais:</p>
+
+        <div class="caixa">
+            <h3>👩‍⚕️ Dra. Ana Silva</h3>
+            <p>Médica Veterinária</p>
+        </div>
+
+        <div class="caixa">
+            <h3>👨‍⚕️ Dr. Lucas Mendes</h3>
+            <p>Médico Veterinário</p>
+        </div>
+
+        <div class="caixa">
+            <h3>👩‍⚕️ Dra. Maria Costa</h3>
+            <p>Médica Veterinária</p>
+        </div>
+
+    </section>
+
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao">
+
+        <h2>Onde estamos?</h2>
+
+        <div class="caixa">
+
+            <h3>📍 PetCare 24h</h3>
+
+            <p>Endereço: Cadastre aqui o endereço.</p>
+
+            <p>Telefone: Cadastre aqui o telefone.</p>
+
+            <p>Horário: Atendimento 24 horas.</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato">
+
+        <h2>Entre em contato</h2>
+
+        <p>Envie uma mensagem para nós!</p>
+
+        <form id="formulario">
+
+            <label>Nome:</label>
+            <input type="text" id="nome"
+                placeholder="Digite seu nome" required>
+
+            <label>E-mail:</label>
+            <input type="email" id="email"
+                placeholder="Digite seu e-mail" required>
+
+            <label>Telefone:</label>
+            <input type="tel" id="telefone"
+                placeholder="Digite seu telefone">
+
+            <label>Mensagem:</label>
+            <textarea id="mensagem"
+                placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit">Enviar mensagem</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>🐾 PetCare 24h</h3>
+
+        <p>Cuidando de quem faz parte da sua família.</p>
+
+        <p>Todos os direitos reservados.</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT: Funcionamento do formulário -->
+    <script>
+
+        // Pegando o formulário pelo ID
+        var formulario = document.getElementById("formulario");
+
+        // Verificando quando o formulário for enviado
+        formulario.addEventListener("submit", function(event) {
+
+            // Evita que a página seja atualizada
+            event.preventDefault();
+
+            // Pegando o nome digitado
+            var nome = document.getElementById("nome").value;
+
+            // Mostrando uma mensagem
+            alert("Olá, " + nome + "! Obrigado por entrar em contato com o PetCare 24h.");
+
+            // Limpando os campos do formulário
+            formulario.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

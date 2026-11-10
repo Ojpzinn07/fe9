@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasa Nobre</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #222;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h2 {
+            color: orange;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .inicio {
+            background: #333;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        .cardapio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .produto {
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+        }
+
+        button {
+            background: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>BRASA NOBRE</h2>
+        <p>Hamburgueria & Smokehouse</p>
+    </header>
+
+    <section class="inicio">
+        <h1>O verdadeiro sabor da brasa!</h1>
+        <p>Os melhores hambúrgueres artesanais para você.</p>
+        <a href="#cardapio">Ver cardápio</a>
+    </section>
+
+    <section id="cardapio">
+        <h1>Nosso Cardápio</h1>
+
+        <div class="cardapio">
+
+            <div class="produto">
+                <h3>Brasa Burger</h3>
+                <p>Hambúrguer com queijo e molho especial.</p>
+                <p>R$ 29,90</p>
+                <button onclick="pedir('Brasa Burger')">Pedir</button>
+            </div>
+
+            <div class="produto">
+                <h3>Cheddar Bacon</h3>
+                <p>Hambúrguer com cheddar e bacon.</p>
+                <p>R$ 34,90</p>
+                <button onclick="pedir('Cheddar Bacon')">Pedir</button>
+            </div>
+
+            <div class="produto">
+                <h3>Smoked Burger</h3>
+                <p>Hambúrguer defumado com barbecue.</p>
+                <p>R$ 39,90</p>
+                <button onclick="pedir('Smoked Burger')">Pedir</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h1>Contato</h1>
+        <p>Faça seu pedido pelo WhatsApp!</p>
+        <a href="https://wa.me/5500000000000">
+            <button>Fazer pedido</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Brasa Nobre</p>
+    </footer>
+
+    <script>
+        function pedir(produto) {
+            alert("Você escolheu: " + produto);
+        }
+    </script>
+
+</body>
+</html>
